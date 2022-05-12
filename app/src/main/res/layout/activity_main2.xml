@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:backgroundTint="@color/teal_700"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/planteHome"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:fontFamily="@font/vermin_vibes"
+        android:gravity="center"
+        android:text="PLANT - E"
+        android:textAlignment="center"
+        android:textColor="@color/teal_200"
+        android:textSize="63sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextAcqua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/testUmidity"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_gravity="left|center_vertical"
+        android:fontFamily="@font/anonymous_pro"
+        android:gravity="center"
+        android:text="In attesa dei dati"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <ImageView
+        android:id="@+id/logoPlanteMain"
+        android:layout_width="398dp"
+        android:layout_height="356dp"
+        android:src="@drawable/plantecolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <ImageView
+        android:id="@+id/logoUmidity"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:src="@drawable/humidity"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/temptTest"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_gravity="left|center_vertical"
+        android:fontFamily="@font/anonymous_pro"
+        android:gravity="center"
+        android:text="In attesa dei dati"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextAcqua"
+        app:layout_constraintEnd_toStartOf="@+id/logoTemp"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toStartOf="@+id/TextTemp"
+        app:layout_constraintTop_toTopOf="@+id/TextTemp"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="111dp"
+        android:layout_height="73dp"
+        android:src="@drawable/linee"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.335" />
+
+    <TextView
+        android:id="@+id/TextLux"
+        android:layout_width="59dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/vermin_vibes"
+        android:gravity="center"
+        android:text="LUX"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="42dp"
+        android:src="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/luxTest"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_gravity="left|center_vertical"
+        android:fontFamily="@font/anonymous_pro"
+        android:gravity="center"
+        android:text="In attesa dei dati"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="111dp"
+        android:layout_height="73dp"
+        android:src="@drawable/lineedx"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <TextView
+        android:id="@+id/TextUmid"
+        android:layout_width="83dp"
+        android:layout_height="39dp"
+        android:fontFamily="@font/vermin_vibes"
+        android:gravity="center"
+        android:text="Umidita'"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="59dp"
+        android:src="@drawable/lineaumid"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.600" />
+
+    <TextView
+        android:id="@+id/TextAcqua"
+        android:layout_width="134dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/vermin_vibes"
+        android:gravity="center"
+        android:text="livello Acqua"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/snackBarLay"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <ImageView
+        android:id="@+id/logoWL"
+        android:layout_width="43dp"
+        android:layout_height="35dp"
+        android:src="@drawable/sealevel"
+        app:layout_constraintBottom_toTopOf="@+id/snackBarLay"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <TextView
+        android:id="@+id/acquatest"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/anonymous_pro"
+        android:gravity="center"
+        android:text="In attesa dei dati"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/snackBarLay"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <ImageView
+        android:id="@+id/logoTemp"
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:src="@drawable/thermometer"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="@+id/TextAcqua"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <TextView
+        android:id="@+id/TextTemp"
+        android:layout_width="124dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/vermin_vibes"
+        android:gravity="center"
+        android:text="Temperatura"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <ImageView
+        android:layout_width="201dp"
+        android:layout_height="208dp"
+        android:src="@drawable/lineaacqua"
+        app:layout_constraintBottom_toTopOf="@+id/snackBarLay"
+        app:layout_constraintEnd_toEndOf="@+id/logoPlanteMain"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="@+id/logoPlanteMain"
+        app:layout_constraintTop_toTopOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="0.659" />
+
+    <LinearLayout
+        android:id="@+id/snackBarLay"
+        android:layout_width="412dp"
+        android:layout_height="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoPlanteMain"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
